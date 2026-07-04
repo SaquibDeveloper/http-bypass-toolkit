@@ -32,21 +32,6 @@ python3 ratelimit_bypass.py -u https://target.com/api/request-reset -n 20 --prox
 python3 ratelimit_bypass.py -u https://target.com/api/request-reset -n 20 --header-spoof-only
 ```
 
-### `mail_alert.py`
-Small SMTP alert utility for pinging yourself when a long recon job finishes
-or finds something. Credentials are pulled from environment variables — never
-hardcoded.
-
-```bash
-export SMTP_SERVER=smtp.gmail.com
-export SMTP_PORT=587
-export SMTP_USERNAME=you@example.com
-export SMTP_PASSWORD=your-app-password
-export ALERT_TO=you@example.com
-
-python3 mail_alert.py --subject "Recon done" --body "3 live subdomains found"
-```
-
 ## Setup
 
 ```bash
